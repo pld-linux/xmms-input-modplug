@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/modplug-xmms/modplugxmms-%{version}.tar.gz
+# Source0-md5:	7a904935ff0197da66cba7c2840b07f1
 URL:		http://modplug-xmms.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
