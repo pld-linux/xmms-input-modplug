@@ -39,7 +39,7 @@ przestrzenny.
 %build
 libtoolize --copy --force
 aclocal
-autoconf
+%{__autoconf}
 %configure
 %{__make}
 
