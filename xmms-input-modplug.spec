@@ -1,19 +1,24 @@
 Summary:	XMMS plugin for playing Amiga audio modules
 Summary(pl):	Wtyczka dla XMMS odtwarzaj±ca modu³y muzyczne z Amigi
 Name:		xmms-input-modplug
-Version:	2.04
-Release:	2
+Version:	2.05
+Release:	1
+# uhm, code is in Public Domain, but xmms forces GPL
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/modplug-xmms/modplugxmms-%{version}.tar.gz
-# Source0-md5:	fe3671391dc65703357db9ad147744ef
+# Source0-md5:	2dd9b88a02978d3001b48863b8cffc5b
 URL:		http://modplug-xmms.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	libmodplug-devel >= 0.7
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.125
-BuildRequires:	xmms-devel
+BuildRequires:	xmms-devel >= 1.0.0
+BuildRequires:	libmodplug >= 0.7
 Requires:	xmms
 Obsoletes:	xmms-input-mikmod
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -40,6 +45,8 @@ przestrzenny.
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 
@@ -49,6 +56,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+rm -f $RPM_BUILD_ROOT%{xmms_input_plugindir}/*.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -57,9 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README TODO ChangeLog AUTHORS
-%attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{xmms_input_plugindir}/*
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
-%{_libdir}/lib*.la
-%{_includedir}/modplug.h
+%doc AUTHORS ChangeLog README TODO
+# this is standalone player - to be separated?
+%attr(755,root,root) %{_bindir}/modplugplay
+%attr(755,root,root) %{xmms_input_plugindir}/*.so
