@@ -5,13 +5,6 @@ Version:	1.5a
 Release:	2
 License:	GPL
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 URL:		http://modplug-xmms.sourceforge.net/
 Source0:	http://download.sourceforge.net/modplug-xmms/modplugxmms-%{version}.tar.gz
 Requires:	xmms
