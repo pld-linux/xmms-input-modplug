@@ -58,5 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README TODO ChangeLog AUTHORS
+%attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{xmms_input_plugindir}/*
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
+%{_libdir}/lib*.la
+%{_includedir}/modplug.h
