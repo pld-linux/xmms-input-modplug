@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Plugin for playing Amiga audio modules. It is MUCH better than mikmod
-plugin. It has no problems playing many modules wich are beyond
+plugin. It has no problems playing many modules which are beyond
 abilities of mikmod plugin. It also has many advanced options
-incrasing sound quality, such as noise reductions, bass boost and
+increasing sound quality, such as noise reductions, bass boost and
 surround sound.
 
 %description -l pl
