@@ -11,6 +11,7 @@ URL: 		http://modplug-xmms.sourceforge.net/
 Source0:	http://download.sourceforge.net/modplug-xmms/modplugxmms-%{version}.tar.gz
 Requires:	xmms
 Obsoletes:	xmms-input-mikmod
+BuildRequires:	libstdc++-devel
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
