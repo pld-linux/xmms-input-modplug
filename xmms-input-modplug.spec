@@ -8,6 +8,7 @@ License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/modplug-xmms/modplugxmms-%{version}.tar.gz
 # Source0-md5:	2dd9b88a02978d3001b48863b8cffc5b
+Patch0:		%{name}-aclocal.patch
 URL:		http://modplug-xmms.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -39,6 +40,7 @@ przestrzenny.
 
 %prep
 %setup -q -n modplugxmms-%{version}
+%patch0 -p1
 
 %build
 %{__libtoolize}
