@@ -1,0 +1,12 @@
+diff -ur modplugxmms-2.05.orig/configure.in modplugxmms-2.05/configure.in
+--- modplugxmms-2.05.orig/configure.in	2003-10-16 05:30:29.000000000 +0200
++++ modplugxmms-2.05/configure.in	2004-07-09 23:50:58.222199784 +0200
+@@ -31,7 +31,7 @@
+ 
+ dnl Add the languages which your application supports here.
+ ALL_LINGUAS=""
+-AM_GLIB_GNU_GETTEXT
++# AM_GLIB_GNU_GETTEXT
+ 
+ dnl find install dir
+ AM_PATH_XMMS(1.0.0, , AC_MSG_ERROR([*** XMMS >= 1.0.0 not installed - please install first ***]))
