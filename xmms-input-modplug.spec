@@ -5,15 +5,15 @@ Version:	2.03
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
+Source0:	http://dl.sourceforge.net/modplug-xmms/modplugxmms-%{version}.tar.gz
 URL:		http://modplug-xmms.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/modplug-xmms/modplugxmms-%{version}.tar.gz
-Requires:	xmms
-Obsoletes:	xmms-input-mikmod
-BuildRequires:	libstdc++-devel
-BuildRequires:	xmms-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
+BuildRequires:	xmms-devel
+Requires:	xmms
+Obsoletes:	xmms-input-mikmod
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
