@@ -2,7 +2,7 @@ Summary:	XMMS plugin for playing Amiga audio modules
 Summary(pl):	Wtyczka dla XMMS odtwarzaj±ca modu³y muzyczne z Amigi
 Name:		xmms-input-modplug
 Version:	2.04
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/modplug-xmms/modplugxmms-%{version}.tar.gz
@@ -12,11 +12,11 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
+BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
 Requires:	xmms
 Obsoletes:	xmms-input-mikmod
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Plugin for playing Amiga audio modules. It is MUCH better than mikmod
@@ -46,7 +46,8 @@ przestrzenny.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README TODO ChangeLog AUTHORS
-%attr(755,root,root) %{_libdir}/xmms/Input/*
+%attr(755,root,root) %{xmms_input_plugindir}/*
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
