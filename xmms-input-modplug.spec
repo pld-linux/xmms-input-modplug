@@ -37,7 +37,7 @@ przestrzenny.
 %setup -q -n modplugxmms-%{version}
 
 %build
-libtoolize --copy --force
+%{__libtoolize}
 aclocal
 %{__autoconf}
 %configure
