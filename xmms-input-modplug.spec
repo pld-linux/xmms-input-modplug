@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
-%description 
+%description
 Plugin for playing Amiga audio modules. It is MUCH better than mikmod
 plugin. It has no problems playing many modules wich are beyond
 abilities of mikmod plugin. It also has many advanced options
