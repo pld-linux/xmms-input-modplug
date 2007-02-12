@@ -1,5 +1,5 @@
 Summary:	XMMS plugin for playing Amiga audio modules
-Summary(pl):	Wtyczka wej¶ciowa dla XMMS-a odtwarzaj±ca modu³y muzyczne z Amigi
+Summary(pl.UTF-8):   Wtyczka wejÅ›ciowa dla XMMS-a odtwarzajÄ…ca moduÅ‚y muzyczne z Amigi
 Name:		xmms-input-modplug
 Version:	2.05
 Release:	2
@@ -30,12 +30,12 @@ abilities of mikmod plugin. It also has many advanced options
 increasing sound quality, such as noise reductions, bass boost and
 surround sound.
 
-%description -l pl
-Wtyczka umo¿liwiaj±ca odtwarzanie modu³ów muzycznych z Amigi. Jest
-ZNACZNIE lepsza od wtyczki mikmod. Nie ma problemów z odtwarzaniem
-wielu modu³ów z którymi wtyczka mikmod zupe³nie sobie nie radzi.
-Posiada ona równie¿ wiele zaawansowanych opcji poprawiaj±cych jako¶æ
-d¼wiêku, jak choæby redukcja szumów, wzmocnienie basów czy d¼wiêk
+%description -l pl.UTF-8
+Wtyczka umoÅ¼liwiajÄ…ca odtwarzanie moduÅ‚Ã³w muzycznych z Amigi. Jest
+ZNACZNIE lepsza od wtyczki mikmod. Nie ma problemÃ³w z odtwarzaniem
+wielu moduÅ‚Ã³w z ktÃ³rymi wtyczka mikmod zupeÅ‚nie sobie nie radzi.
+Posiada ona rÃ³wnieÅ¼ wiele zaawansowanych opcji poprawiajÄ…cych jakoÅ›Ä‡
+dÅºwiÄ™ku, jak choÄ‡by redukcja szumÃ³w, wzmocnienie basÃ³w czy dÅºwiÄ™k
 przestrzenny.
 
 %prep
