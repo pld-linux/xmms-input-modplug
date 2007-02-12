@@ -1,5 +1,5 @@
 Summary:	XMMS plugin for playing Amiga audio modules
-Summary(pl.UTF-8):   Wtyczka wejściowa dla XMMS-a odtwarzająca moduły muzyczne z Amigi
+Summary(pl.UTF-8):	Wtyczka wejściowa dla XMMS-a odtwarzająca moduły muzyczne z Amigi
 Name:		xmms-input-modplug
 Version:	2.05
 Release:	2
