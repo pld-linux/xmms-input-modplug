@@ -2,7 +2,7 @@ Summary:	XMMS plugin for playing Amiga audio modules
 Summary(pl.UTF-8):	Wtyczka wejściowa dla XMMS-a odtwarzająca moduły muzyczne z Amigi
 Name:		xmms-input-modplug
 Version:	2.05
-Release:	2
+Release:	3
 # uhm, code is in Public Domain, but xmms forces GPL
 License:	GPL
 Group:		X11/Applications/Sound
@@ -59,12 +59,13 @@ rm -rf $RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{xmms_input_plugindir}/*.la
 
+# newer version in modplugtools
+%{__rm} $RPM_BUILD_ROOT%{_bindir}/modplugplay
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README TODO
-# this is standalone player - to be separated?
-%attr(755,root,root) %{_bindir}/modplugplay
 %attr(755,root,root) %{xmms_input_plugindir}/*.so
