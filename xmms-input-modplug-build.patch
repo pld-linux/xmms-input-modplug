@@ -1,0 +1,23 @@
+diff -ur modplugxmms-2.05.orig/modplugxmms/archive/arch_gzip.cpp modplugxmms-2.05/modplugxmms/archive/arch_gzip.cpp
+--- modplugxmms-2.05.orig/modplugxmms/archive/arch_gzip.cpp	2010-08-25 15:47:47.826313276 +0200
++++ modplugxmms-2.05/modplugxmms/archive/arch_gzip.cpp	2010-08-25 15:47:18.442983147 +0200
+@@ -10,6 +10,7 @@
+ #include <fcntl.h>
+ #include <unistd.h>
+ #include <stdio.h>
++#include <string.h>
+ 
+ #include "arch_gzip.h"
+ 
+diff -ur modplugxmms-2.05.orig/modplugxmms/archive/arch_rar.cpp modplugxmms-2.05/modplugxmms/archive/arch_rar.cpp
+--- modplugxmms-2.05.orig/modplugxmms/archive/arch_rar.cpp	2003-10-16 06:24:06.000000000 +0200
++++ modplugxmms-2.05/modplugxmms/archive/arch_rar.cpp	2010-08-25 15:48:50.152982740 +0200
+@@ -10,6 +10,8 @@
+ #include <fcntl.h>
+ #include <unistd.h>
+ #include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
+ 
+ #include "arch_rar.h"
+ #include <iostream>
